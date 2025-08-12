@@ -1,0 +1,20 @@
+<div class='card'>
+    <div class='card-header'>
+      Multiple ngSwitchCase with same condition
+    </div>
+   
+    <div class="card-body">
+      <select [(ngModel)]="selectedValue1">
+        <option *ngFor="let item of items" [value]="item.name">{{item.name}}</option>
+      </select>
+   
+      <div [ngSwitch]="selectedValue1">
+        <p *ngSwitchCase="'One'">One is Selected</p>
+        <p *ngSwitchCase="'Two'">Two is Selected</p>
+        <p *ngSwitchCase="'Two'">Two Again used in another element</p>
+        <p *ngSwitchDefault>This is Default</p>
+      </div>
+    </div>
+   
+  </div>
+   

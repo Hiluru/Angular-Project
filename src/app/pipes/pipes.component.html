@@ -1,0 +1,8 @@
+<p>pipes works!</p>
+<ul>
+    <li *ngFor="let fruit of fruits | slice:0">{{ fruit | json}}</li>
+</ul>
+
+<input type="date" [(ngModel)]="dates">
+<p>{{dates | custom}}</p>
+<p>{{dates}}</p>

@@ -1,0 +1,25 @@
+<!-- From Uiverse.io by ammarsaa -->
+
+<div class="center">
+<form class="form center" [formGroup]="Loginform" (ngSubmit)="LoginUser()">
+    <p class="title">Login </p>
+            
+    <label>
+        <input class="input" type="email" placeholder="" required="" formControlName="uname">
+        <span>User Name</span>
+        <div *ngIf="uname?.touched || uname?.dirty">
+            <p *ngIf="uname?.errors?.['required']" class="text-white">Enter user Name</p>
+        </div>
+    </label> 
+        
+    <label>
+        <input class="input" type="password" placeholder="" required="" formControlName="pass">
+        <span>Password</span>
+        <div *ngIf="pass?.touched || pass?.dirty">
+            <p *ngIf="pass?.errors?.['required']" class="text-white">Enter your password</p>
+        </div>
+    </label>
+    <button class="submit">Submit</button>
+    <p class="signin"><a routerLink="/reg/">Register</a> </p>
+</form>
+</div>

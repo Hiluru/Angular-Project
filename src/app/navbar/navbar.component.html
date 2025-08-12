@@ -1,0 +1,7 @@
+<nav class="navbar navbar-light bg-light nav">
+  <button class="navbar-toggler ms-3" type="button" (click)="sendevent()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <i class="{{isIcon? 'fas fa-moon position-absolute top-0 end-0 me-5 mt-3' : 'fas fa-sun position-absolute top-0 end-0 me-5 mt-3'}}"
+    (click)="bgchange()"></i>
+</nav>

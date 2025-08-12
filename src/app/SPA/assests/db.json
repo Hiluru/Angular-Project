@@ -1,0 +1,20 @@
+{
+  "Data": [
+    {
+      "id": "ed59",
+      "name": "Hiluru",
+      "lname": "Mohamed",
+      "email": "hiluru@gmail.com",
+      "pass": "Hiluru123@",
+      "cpass": "Hiluru123@"
+    },
+    {
+      "id": "8812",
+      "name": "Vishnu",
+      "lname": "paragash",
+      "email": "vishu@gmail.com",
+      "pass": "Vishnu123@",
+      "cpass": "Vishnu123@"
+    }
+  ]
+}

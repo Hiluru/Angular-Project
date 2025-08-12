@@ -1,0 +1,13 @@
+<div class="main">
+  <div [ngClass]="colorchange? 'sidebar bg-light' : 'sidebar bg-dark' " [ngStyle]="{'width':Comefromchild ? '15%':'0%','background-color': colorchange ? 'white' : 'black'}">
+    <h2 [ngClass]="colorchange? 'h2 text-dark p-3' : 'h2 text-white p-3' ">Learn Angular</h2>
+    <ul class="list-group" *ngFor="let i of Menus">
+      <li [ngClass]="colorchange? 'list-group-item bg-white text-dark border-0 hov' : 'list-group-item bg-dark text-white border-0 hov' "><a [ngClass]="colorchange? 'text-dark text-decoration-none' : 'text-white text-decoration-none' "
+          [routerLink]='i.path'>{{i.name}}</a></li>
+    </ul>
+  </div>
+  <div class="main-content" [ngStyle]="{'width':Comefromchild ? '85%':'100%','background-color': colorchange ? 'black' : 'rgb(195, 243, 247)'}">
+    <app-navbar (childtoparent)="recive($event)" (changetheme)="recivecolor($event)"></app-navbar>
+    <router-outlet></router-outlet>
+  </div>
+</div>

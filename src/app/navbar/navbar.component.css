@@ -1,0 +1,9 @@
+.nav{
+   justify-content: start;
+}
+h2{
+    display: inline-block;
+}
+i{
+    font-size: 25px;
+}

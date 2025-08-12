@@ -1,0 +1,46 @@
+{
+  "UserData": [
+    {
+      "id": "58a4",
+      "name": "Hiluru",
+      "age": "25",
+      "city": "TJ",
+      "createdBY": "ed59"
+    },
+    {
+      "id": "58e6",
+      "name": "VISHNU",
+      "age": "28",
+      "city": "CBE",
+      "createdBY": "8812"
+    },
+    {
+      "id": "e4b8",
+      "name": "mohamed",
+      "age": "25",
+      "city": "cbe",
+      "createdBY": "ed59"
+    },
+    {
+      "id": "d98b",
+      "name": "vishnu",
+      "age": "100",
+      "city": "cbe",
+      "createdBY": "ed59"
+    },
+    {
+      "id": "51eb",
+      "name": "user2",
+      "age": "52",
+      "city": "rg",
+      "createdBY": "ed59"
+    },
+    {
+      "id": "8a12",
+      "name": "user3",
+      "age": "35",
+      "city": "cbe",
+      "createdBY": "ed59"
+    }
+  ]
+}

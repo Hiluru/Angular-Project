@@ -1,0 +1,51 @@
+<!-- From Uiverse.io by ammarsaa --> 
+<div class="center">
+<form class="form" [formGroup]="RegForm" (ngSubmit)="Register()">
+    <p class="title">Register </p>
+    <p class="message">Signup now and get full access to our app. </p>
+        <div class="flex">
+        <label>
+            <input class="input" type="text" placeholder="" required="" formControlName="name">
+            <span>Firstname</span>
+            <div *ngIf="name?.touched || email?.dirty">
+                <p *ngIf="name?.errors?.['required']" class="text-white">Enter First Name</p>
+                <p *ngIf="name?.errors?.['minlength']" class="text-white">Enter Atleast 3 char</p>
+            </div>
+        </label>
+
+        <label>
+            <input class="input" type="text" placeholder="" required="" formControlName="lname">
+            <span>Lastname</span>
+            <div *ngIf="lname?.touched || email?.dirty">
+                <p *ngIf="lname?.errors?.['required']" class="text-white">Enter Last Name</p>
+                <p *ngIf="lname?.errors?.['minlength']" class="text-white">Enter Atleast 3 char</p>
+            </div>
+        </label>
+    </div>  
+            
+    <label>
+        <input class="input" type="email" placeholder="" required="" formControlName="email">
+        <span>Email</span>
+        <div *ngIf="email?.touched || email?.dirty">
+            <p *ngIf="email?.errors?.['required']" class="text-white">Enter Your Email</p>
+            <p *ngIf="email?.errors?.['invalid']" class="text-white">Enter valid email address</p>
+        </div>
+    </label> 
+        
+    <label>
+        <input class="input" type="password" placeholder="" required="" formControlName="pass">
+        <span>Password</span>
+        <div *ngIf="pass?.touched || pass?.dirty">
+            <p *ngIf="pass?.errors?.['required']" class="text-white">Enter Your Password</p>
+            <p *ngIf="pass?.errors?.['invalidpatter']" class="text-white">Your password is weak</p>
+        </div>
+    </label>
+    <label>
+        <input class="input" type="password" placeholder="" required="" formControlName="cpass">
+        <span>Confirm password</span>
+        <p *ngIf="(cpass?.touched || cpass?.dirty) && RegForm.errors?.['notequal']" class="text-white">Password Mismatch</p>
+    </label>
+    <button class="submit" [disabled]="RegForm.invalid">Submit</button>
+    <p class="signin">Already have an acount ? <a routerLink="/login/">Signin</a> </p>
+</form>
+</div>
